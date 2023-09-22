@@ -1,0 +1,26 @@
+# Fichiers Terraform générés
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Fichiers de configuration sensibles
+*.tfvars
+secrets.tfvars
+
+# Dossiers générés par Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Dossiers générés par les IDE ou éditeurs
+.vscode/
+.idea/
+
+# Autres fichiers générés
+*.backup
+*.log
+
+# Autres fichiers sensibles (par exemple, fichiers de clés pour Google Cloud, AWS, etc.)
+*.pem
+*.json
+*.key
+*.cert

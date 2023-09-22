@@ -1,0 +1,18 @@
+1- download google cloud sdk
+   connect to you account
+2- On GCP create  a service account and donload the json key
+or utiliser workload federation identity
+
+definier variable :$env:PATH += ";C:\Users\firas\Downloads\terraform_1.5.7_windows_386"
+create main.tf
+terminal:
+   terraform init
+   terraform plan
+   terraform apply
+   terraform destroy
+
+Vous devriez exécuter terraform init dans le répertoire mon-projet-terraform/ 
+et non dans le répertoire gcs/. Terraform chargera récursivement tous 
+les fichiers .tf dans le répertoire où vous exécutez init (et ses sous-répertoires) 
+et traitera également les modules selon
+ la manière dont ils sont référencés dans votre configuration principale.
